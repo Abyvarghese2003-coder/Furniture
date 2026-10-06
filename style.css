@@ -1,0 +1,354 @@
+*{
+    margin: 0px;
+    /* padding: 0px; */
+    box-sizing: border-box;
+    font-family: "Roboto Slab", serif;
+}
+body
+{
+    background-color: #dfdfdf;
+    color: darkred;
+}
+
+.navbar
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.401);
+    padding: 10px 8%;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 1;
+}
+.brand
+{
+    text-decoration: none;
+    font-size: 30px;
+    color: #6f3a22;
+    font-weight: 700;
+}
+#check
+{
+    display: none;
+}
+.icons
+{
+    font-size: 30px;
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    display: none;
+}
+.navlinks
+{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.link
+{
+    text-decoration: none;
+    color: #6f3a22;
+    font-weight: 700;
+    transition: 0.3s;
+}
+.link:hover
+{
+    color: red;
+}
+.hero
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 160px 8%;
+    align-items: center;
+}
+.herotext
+{
+    flex: 1;
+    animation: fadein 1.5s ease;
+}
+
+#herotile
+{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#heropara
+{
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+.herobutton
+{
+    padding: 12px 25px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #6f3a22;
+    transition: 0.3s;
+}
+.herobutton:hover
+{
+    background-color: white;
+    color: #6f3a22;
+    transform: scale(1.2);
+}
+.heroimage
+{
+    flex: 1;
+}
+.heroimage:hover
+{
+    transform: scale(1.1);
+}
+#furnitureimage
+{
+    width: 100%;
+    border-radius: 15px;
+}
+/* Products */
+.products
+{
+    padding: 0px 8% ;
+    text-align: center;
+}
+.producthead
+{
+    font-size: 35px;
+    margin-bottom: 40px;
+}
+.producthead:hover
+{
+    transform: scale(1.1);
+}
+.productcontainer
+{
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card
+{
+    background-color: white;
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition:0.3s;
+}
+.card:hover
+{
+    transform: translateY(-10px);
+}
+.cardimage
+{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.productname
+{
+    margin: 10px 10px;
+}
+.price
+{
+    margin: 15px 0px;
+    color: #6f3a22;
+}
+.productbutton
+{
+    padding: 12px 25px;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    background-color: #6f3a22;
+    transition: 0.3s;
+}
+.productbutton:hover
+{
+    background-color: white;
+    color: #6f3a22;
+    transform: scale(1.2);
+}
+.banner
+{
+    padding: 20px 8% 60px 8%;
+    margin: 20px 40px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:  url(./images/Contemporary\ Warmth_\ Modern\ Interior\ with\ Vibrant\ Color\ Accents\ and\ Beige\ Armchair.png);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: bottom;
+    border-radius: 20px;
+
+}
+.bannerhead
+{
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: white;
+}
+.bannerpara
+{
+    font-size: 20px;
+    margin-bottom: 40px;
+    line-height: 1.2;
+    color: white;
+    text-shadow: 2px 2px rgb(1, 1, 1);
+}
+.bannerbutton
+{
+    font-weight: 500;
+    font-size: 18px;
+    background-color: rgb(255, 8, 0);
+}
+.content
+{
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.39);
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+    box-shadow: rgba(222, 217, 217, 0.555);
+    padding: 0px 8%;
+    flex-wrap: wrap;
+}
+.contenthead,.subscribehead
+{
+    font-size: 25px;
+    margin-bottom: 20px;
+    color: #6f3a22;
+}
+.contentphone,.contentmail
+{
+    font-size: 16px;
+    font-weight: 300;
+}
+.smlink
+{
+    color: #6f3a22;
+    margin-right: 10px;
+}
+.socialicons
+{
+    margin-top: 10px;
+}
+.box
+{
+    display: flex;
+}
+.subinput
+{
+    padding: 10px;
+    width: 300px;
+}
+.subutton
+{
+    width: 100px;
+    margin-left: 10px;
+    
+}
+.footer
+{
+    padding: 20px;
+    background-color: #6f3a22;
+    color: white;
+    text-align: center;
+}
+html
+{
+    scroll-behavior: smooth;
+}
+
+/* Animation */
+@keyframes fadein{
+    0%{
+        opacity: 0;
+        transform:translateY(30px);
+    }
+    /* 50%
+        {
+            opacity: 0.5;
+            transform: translateY(15px);
+            color: aqua;
+        } */
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width:768px)
+{
+    .navbar
+    {
+        padding: 20px 5%;
+    }
+    .icons
+    {
+        display: flex;
+    }
+    #cancelIcon
+    {
+        display: none;
+    }
+    #check:checked~.icons #menuIcon
+    {
+        display: none;
+    }
+    #check:checked~.icons #cancelIcon
+    {
+        display: block;
+    }
+    .navlinks
+    {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0px;
+        flex-direction: column;
+        background-color: rgba(236, 227, 227, 0.329);
+        /* height: 0px; */
+        display: none;
+        backdrop-filter: blur(10px);
+
+    }
+
+    #check:checked~ .navlinks
+    {
+        display: block;
+    }
+    .links
+    {
+        text-align: center  ;
+        margin: 5px 0px;
+    }
+    .hero
+    {
+        flex-direction: column;
+        text-align: center;
+    }
+    #heroheading
+    {
+        font-size: 35px;
+    }
+    .banner,.content
+    {
+        height: fit-content;
+        padding: 40px 8%;
+    }
+}
